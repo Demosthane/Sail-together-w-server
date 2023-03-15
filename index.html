@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SailTogether.css">
+  <title>My Ships</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Sail Together Waitlist</h1>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Join the Waitlist</h2>
+        <form id="waitlist-form">
+          <div class="form-group">
+            <label for="name-input">Name:</label>
+            <input type="text" class="form-control" id="name-input" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Join Waitlist</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Add Ship</h2>
+        <form id="add-ship-form">
+          <div class="form-group">
+            <label for="ship-name-input">Ship Name:</label>
+            <input type="text" class="form-control" id="ship-name-input">
+          </div>
+          <div class="form-group">
+            <label for="slots-dropdown">Open Slots:</label>
+            <select id="slots-dropdown" class="form-control">
+              <option value="2">2 slots</option>
+              <option value="3">3 slots</option>
+              <option value="4">4 slots</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Ship</button>
+        </form>
+      </div>		
+          
+    </div>
+
+    <div class="col-md-6">
+      <h2>Waitlist</h2>
+      <table id="waitlist-table" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="waitlist-table-body">
+          <!-- Waitlist rows will be added here dynamically -->
+        </tbody>
+      </table>
+    </div>
+  
+    <hr>
+  
+
+    <div id="ship-cards-container"></div>
+
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <script src="SailTogether.js"></script>
+
+</script>
+</body>
+</html>

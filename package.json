@@ -1,0 +1,29 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "SailTogether Waitlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Demosthane/Sail-Together.git"
+  },
+  "keywords": [
+    "Sail",
+    "together"
+  ],
+  "author": "Michael Szanter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Demosthane/Sail-Together/issues"
+  },
+  "homepage": "https://github.com/Demosthane/Sail-Together#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  }
+}
